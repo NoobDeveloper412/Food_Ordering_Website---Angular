@@ -1,4 +1,4 @@
-<app-search></app-search>
+<app-hero></app-hero>
 <ul>
   <li *ngFor="let food of foods">
     <a>
@@ -26,13 +26,12 @@
           </div>
           <div class="cook-time">
             <span>
-              ⏰
-              {{food.cookTime}}
+              ⏰ {{food.cookTime}}
             </span>
           </div>
         </div>
         <div class="price">
-           {{food.price|currency:'PKR. '}}
+          {{food.price|currency:'PKR. '}}
         </div>
       </div>
     </a>
