@@ -7,7 +7,7 @@ ul {
   padding: 0;
 }
 ul li a {
-  height: 25rem;
+  height: 22rem;
   width: 20rem;
   border: 1px solid whitesmoke;
   border-radius: 1rem;
@@ -21,4 +21,56 @@ li a:hover {
   cursor: pointer;
   opacity: 0.8;
   transition: 0.5s;
+}
+
+.content {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.favourite {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.6rem;
+  /* background-color: #e72929; */
+  color: #e72929;
+  border: none;
+  /* border-radius: 50%; */
+  /* font-size: 1.2rem; */
+  cursor: pointer;
+}
+
+.favourite.not {
+  color: black;
+}
+.start {
+  margin-bottom: 0.2rem;
+}
+
+.product-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-tracks: center;
+}
+.origins {
+  flex: 9;
+}
+.origins span {
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  color: gray;
+  font-size: .85rem;
+  margin-right: .3rem;
+  display: inline-block;
+}
+
+.cook-time{
+  font-size: 0.85rem;
+  flex: 3;
+  text-align: right;
+}
+.price{
+  color: #424242;
+  margin-top: .rem;
 }

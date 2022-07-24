@@ -7,7 +7,7 @@
           {{food.name}}
         </div>
         <span class="favourite {{food.favourite ? '' :'not' }}">
-          ★
+          ❤
         </span>
         <star-rating
           [value]="food.star"
@@ -29,9 +29,9 @@
               {{food.cookTime}}
             </span>
           </div>
-          <div class="price">
-             {{food.price|currency:'PKR. '}}
-          </div>
+        </div>
+        <div class="price">
+           {{food.price|currency:'PKR. '}}
         </div>
       </div>
     </a>
