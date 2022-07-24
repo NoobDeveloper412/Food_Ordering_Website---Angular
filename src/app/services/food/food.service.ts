@@ -5,6 +5,9 @@ import { Foods } from 'src/app/shared/models/food';
   providedIn: 'root'
 })
 export class FoodService {
+  getAll() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor() { }
 
