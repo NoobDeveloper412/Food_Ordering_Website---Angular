@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../services/food/food.service';
 import { Foods } from '../shared/models/food';
 import { StarRatingComponent } from 'ng-starrating';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { StarRatingComponent } from 'ng-starrating';
 })
 export class HomeComponent implements OnInit {
   foods:Foods[] = [];
-  constructor(private fs:FoodService) { }
+  constructor(private fs:FoodService, private router:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.foods = this.fs.getFoodList();
