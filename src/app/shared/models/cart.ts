@@ -8,11 +8,11 @@ export class Cart {
 
     // }
     items: CartItem[] = [];
-    getTotalPrice(): number{
+    getTotalPrice(): number {
         let totalPrice = 0;
         this.items.forEach(item => {
-           return totalPrice += item.getPrice();
+            return totalPrice += item.getPrice();
         })
-        return totalPrice
+        return totalPrice;
     }
 }
