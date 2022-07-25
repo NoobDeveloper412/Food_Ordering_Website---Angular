@@ -1,5 +1,5 @@
 <div class="" *ngIf="tags">
-    <a href="" *ngFor="let tag of tags">
+    <a routerLink="/tag/{{tag.name}}" *ngFor="let tag of tags">
         {{tag.name}}({{tag.count}})
     </a>
 </div>
