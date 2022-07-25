@@ -37,4 +37,12 @@ export class FoodService {
       },
     ]
   }
+
+  getFoodByTags(tag: string): Foods[] {
+    if (tag == "all")
+      return this.getFoodList();
+    else
+      return this.getFoodList().filter(food => food.tags?.includes(tag));
+  }
+
 }
