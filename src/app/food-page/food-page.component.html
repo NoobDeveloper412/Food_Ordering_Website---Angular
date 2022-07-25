@@ -11,4 +11,31 @@
       ❤
     </span>
   </div>
+  <div class="star">
+    <star-rating
+      [value]="food.star"
+      [totalstars]="5"
+      checkedcolor="red"
+      uncheckedcolor="black"
+      size="24px"
+      [readonly]="true"
+    ></star-rating>
+  </div>
+  <div class="origins">
+    <span *ngFor="let origin of food.origins">
+      {{origin}}
+    </span>
+  </div>
+  <div class="tags">
+    <app-tags [foodPageTags]="food.tags"></app-tags>
+  </div>
+  <div class="cook-time">
+    <span> Time to cook about <strong>{{food.cookTime}}</strong> Minutes </span>
+  </div>
+  <div class="price">
+    <span>
+      {{food.price|currency:'PKR. '}}
+    </span>
+  </div>
+  <button>Add to Cart</button>
 </div>

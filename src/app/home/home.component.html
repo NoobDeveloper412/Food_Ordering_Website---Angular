@@ -10,14 +10,16 @@
         <span class="favourite {{food.favourite ? '' :'not' }}">
           ❤
         </span>
-        <star-rating
-          [value]="food.star"
-          [totalstars]="5"
-          checkedcolor="red"
-          uncheckedcolor="black"
-          size="24px"
-          [readonly]="true"
-        ></star-rating>
+        <div class="star">
+          <star-rating
+            [value]="food.star"
+            [totalstars]="5"
+            checkedcolor="red"
+            uncheckedcolor="black"
+            size="24px"
+            [readonly]="true"
+          ></star-rating>
+        </div>
         <div class="product-item-footer">
           <div class="origins">
             <span *ngFor="let origin of food.origins">
