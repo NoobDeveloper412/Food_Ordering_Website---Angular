@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { HeroComponent } from './hero/hero.component';
 import { TagsComponent } from './tags/tags.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
+import { FoodPageComponent } from './food-page/food-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
     SearchComponent,
     HeroComponent,
     TagsComponent,
-    CartPageComponent
+    CartPageComponent,
+    FoodPageComponent
   ],
   imports: [
     BrowserModule,
