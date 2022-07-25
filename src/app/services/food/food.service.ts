@@ -12,6 +12,10 @@ export class FoodService {
 
   constructor() { }
 
+  getFoodById(id: number): Foods {
+    return this.getFoodList().find(food => food.id == id)!;
+  }
+
   getFoodList(): Foods[] {
     return [
       {
