@@ -40,7 +40,7 @@ export class FoodService {
   }
 
   getFoodByTags(tag: string): Foods[] {
-    if (tag == "all")
+    if (tag == "All")
       return this.getFoodList();
     else
       return this.getFoodList().filter(food => food.tags?.includes(tag));
@@ -48,10 +48,10 @@ export class FoodService {
 
   getAllTags(): Tag[] {
     return [
-      {name:'All', count:14},
-      {name:'Pizza', count:2},
-      {name:'Burger', count:1},
-      {name:'Italian Pasta', count:2},
+      { name: 'All', count: 14 },
+      { name: 'Pizza', count: 2 },
+      { name: 'Burger', count: 1 },
+      { name: 'Italian Pasta', count: 2 },
     ]
   }
 
