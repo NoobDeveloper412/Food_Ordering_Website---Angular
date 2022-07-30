@@ -20,10 +20,10 @@ export class FoodService {
     return [
       {
         id: 1,
-        name: 'Pizza',
+        name: 'Malai Boti',
         price: 10,
-        origins: ['Italy'],
-        tags: ['Pizza', 'Italian'],
+        origins: ['Indian', "Pakistan"],
+        tags: ['Indian Cuisine', 'Chicken on a Rod'],
         favourite: true,
         imageUrl: '/assets/img (1).jpg',
         star: 5,
@@ -68,7 +68,7 @@ export class FoodService {
         price: 10,
         origins: ['India, Pakistan'],
         tags: ['Roll'],
-        favourite: true,
+        favourite: false,
         imageUrl: '/assets/img (3).jpg',
         star: 3,
         cookTime: '10'

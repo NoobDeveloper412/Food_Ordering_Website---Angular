@@ -5,7 +5,7 @@
   </div>
   <div class="card-container">
     <ul>
-      <h3 *ngIf="isFood <= 0 ">Not Found!</h3>
+      <!-- <h3 *ngIf="isFood <= 0 ">Not Found!</h3> -->
       <li *ngFor="let food of foods">
         <a routerLink="/food/{{food.id}}">
           <img src="{{food.imageUrl}}" alt="food image" />
