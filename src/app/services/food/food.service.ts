@@ -40,6 +40,39 @@ export class FoodService {
         star: 4,
         cookTime: '10 min'
       },
+      {
+        id: 3,
+        name: 'Shawarma',
+        price: 10,
+        origins: ['India, Pakistan'],
+        tags: ['Roll'],
+        favourite: true,
+        imageUrl: '/assets/img (3).jpg',
+        star: 3,
+        cookTime: '10'
+      },
+      {
+        id: 4,
+        name: 'Shawarma',
+        price: 10,
+        origins: ['India, Pakistan'],
+        tags: ['Roll'],
+        favourite: true,
+        imageUrl: '/assets/img (3).jpg',
+        star: 3,
+        cookTime: '10'
+      },
+      {
+        id: 5,
+        name: 'Shawarma',
+        price: 10,
+        origins: ['India, Pakistan'],
+        tags: ['Roll'],
+        favourite: true,
+        imageUrl: '/assets/img (3).jpg',
+        star: 3,
+        cookTime: '10'
+      },
     ]
   }
 
@@ -52,7 +85,7 @@ export class FoodService {
 
   getAllTags(): Tag[] {
     return [
-      { name: 'All', count: 14 },
+      { name: 'All', count: 5 },
       { name: 'Pizza', count: 2 },
       { name: 'Burger', count: 1 },
       { name: 'Italian Pasta', count: 2 },
