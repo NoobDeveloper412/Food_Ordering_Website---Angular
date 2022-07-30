@@ -2,11 +2,9 @@ import { CartItem } from "./cartItem";
 import { Foods } from "./food";
 
 export class Cart {
-    // constructor(food: Foods) {
-    //     this.food = food;
-    //     // this.getPrice();
-
-    // }
+    constructor() {
+        this.getTotalPrice();
+    }
     items: CartItem[] = [];
     getTotalPrice(): number {
         let totalPrice = 0;

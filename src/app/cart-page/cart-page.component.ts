@@ -10,7 +10,10 @@ import { CartItem } from '../shared/models/cartItem';
 })
 export class CartPageComponent implements OnInit {
   cart!: Cart;
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService) {
+    this.setCart()
+  }
+  ngOnInit(): void {}
   setCart() {
     this.cart = this.cartService.getCart();
   }
@@ -23,7 +26,6 @@ export class CartPageComponent implements OnInit {
     this.cartService.changeQuantity(cartItem.food.id, quantity);
     this.setCart()
   }
-  ngOnInit(): void {
-  }
+
 
 }
