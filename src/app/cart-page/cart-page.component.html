@@ -5,7 +5,7 @@
       <div class="image-container">
         <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name" />
       </div>
-      <div class="">
+      <div class="name-container">
         <a routerLink="/food/{{cartItem.food.id}}">
           {{cartItem.food.name}}
         </a>
@@ -36,12 +36,14 @@
       </div>
     </li>
   </ul>
-</div>
-<div class="checkout">
+  <div class="checkout">
     <div class="food-count">
-        {{cart.items.length}} 
+      {{cart.items.length}}
     </div>
     <div class="total-price">
-        {{cart.getTotalPrice() | currency:'PKR.'}}
+      {{cart.getTotalPrice() | currency:'PKR.'}}
     </div>
+    <a routerLink="/checkout">Proceed to checkout</a>
+  </div>
+  
 </div>
