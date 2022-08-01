@@ -1,0 +1,24 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  height: 40vh;
+}
+div a {
+  font-size: 1.3rem;
+  /* background-color: #e72929; */
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  border-radius: 10rem;
+  padding: 0.7rem;
+  margin-top: 2rem;
+  opacity: 0.9;
+}
+div a:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #e72929;
+  background-color: #ffc107;
+}

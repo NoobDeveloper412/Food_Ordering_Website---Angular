@@ -14,9 +14,9 @@ export class CartPageComponent implements OnInit {
   constructor(private cartService: CartService, private foodService:FoodService) {
     // After designing this page, we'll remove all this code
     let foods =  foodService.getFoodList()
-    cartService.addToCart(foods[1])
-    cartService.addToCart(foods[2])
-    cartService.addToCart(foods[3])
+    // cartService.addToCart(foods[1])
+    // cartService.addToCart(foods[2])
+    // cartService.addToCart(foods[3])
     this.setCart()
   }
   ngOnInit(): void {}
