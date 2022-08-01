@@ -11,6 +11,7 @@ import { HeroComponent } from './hero/hero.component';
 import { TagsComponent } from './tags/tags.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FoodPageComponent } from './food-page/food-page.component';
     HeroComponent,
     TagsComponent,
     CartPageComponent,
-    FoodPageComponent
+    FoodPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
