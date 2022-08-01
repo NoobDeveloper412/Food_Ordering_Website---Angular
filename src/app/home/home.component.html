@@ -1,8 +1,14 @@
 <app-hero></app-hero>
+
 <div class="home-container">
   <div class="card-header {{searchHeader  ? 'resultHeader' : ''}}">
     <h2>{{ searchHeader ? "Search Result" : "Newly Added" }}</h2>
   </div>
+  <app-not-found
+    [visible]="!foods || foods.length <= 0"
+    notFoundMessage="Nothing found!"
+    resetLinkText="Browse catalog"
+  ></app-not-found>
   <div class="card-container">
     <ul>
       <!-- <h3 *ngIf="isFood <= 0 ">Not Found!</h3> -->

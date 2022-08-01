@@ -1,4 +1,4 @@
-<div *ngIf="tags" [style.justifyContent]="justifyContent">
+<div *ngIf="tags" [style.justifyContent]="justifyContent" class="mt-5">
   <a routerLink="/tag/{{tag.name}}" *ngFor="let tag of tags">
     {{tag.name}} ({{tag.count}})
   </a>
