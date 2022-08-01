@@ -1,4 +1,9 @@
-<div class="container">
+<app-not-found
+  [visible]="!cart || cart.items.length <= 0"
+  notFoundMessage="Items not found!"
+  resetLinkText="Wanna have something?"
+></app-not-found>
+<div *ngIf="cart && cart.items.length > 0" class="container">
   <ul>
     <!-- <h1>{{cart}}</h1> -->
     <li *ngFor="let cartItem of cart.items">
@@ -45,5 +50,4 @@
     </div>
     <a routerLink="/checkout">Proceed to checkout</a>
   </div>
-  
 </div>

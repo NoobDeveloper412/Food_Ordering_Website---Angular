@@ -12,6 +12,7 @@ import { CartItem } from '../shared/models/cartItem';
 export class CartPageComponent implements OnInit {
   cart!: Cart;
   constructor(private cartService: CartService, private foodService:FoodService) {
+    // After designing this page, we'll remove all this code
     let foods =  foodService.getFoodList()
     cartService.addToCart(foods[1])
     cartService.addToCart(foods[2])
